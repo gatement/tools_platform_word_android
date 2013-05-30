@@ -30,6 +30,7 @@ public class WordProxy {
 		String cookie = Config.SESSION_COOKIE_NAME + "=" + sessionId;
 		String response = HttpRequest.doGet(url, cookie);
 
+		Log.i(Config.LOG_TAG, "getAllWords cookie: " + cookie);
 		Log.i(Config.LOG_TAG, "getAllWords return: " + response);
 
 		JSONObject obj = new JSONObject(response);
