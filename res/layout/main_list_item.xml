@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip" >
+
+    <ImageView
+        android:id="@+id/main_list_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/main_list_item_icon_desc"
+        android:src="@drawable/touchlistview_grabber" />
+    
+    <TextView
+        android:id="@+id/main_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@id/main_list_item_icon"
+        android:ellipsize="marquee"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textColor="#b5b6b5"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

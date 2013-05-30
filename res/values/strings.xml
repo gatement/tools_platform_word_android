@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">word</string>
+    
+    <string name="main_bottom_btn">LIST</string>  
+    <string name="main_menu_settings">Settings</string>
+    <string name="main_menu_sync">Sync</string>
+    <string name="main_menu_about">About</string>
+    <string name="main_menu_revert">Revert</string>  
+    <string name="main_list_item_icon_desc">Drag to move</string>    
+    <string name="main_list_menu_delete">Delete</string>
+    <string name="main_list_no_words">No words yet.</string>    
+    <string name="main_slide_hide_word">Word</string>
+    <string name="main_slide_hide_translation">Translation</string>  
+    <string name="main_slide_delete_word">Delete</string>
+    
+    <string name="about_activity_title">About johnsonword</string>
+    <string name="about_author">Author: Johnson Lau</string>
+    <string name="about_email">Email: gatement@gmail.com</string>
+    <string name="about_back">Back</string>
+    
+    <string name="settings_activity_title">Settings</string>
+    <string name="settings_service_url">Service</string>
+    <string name="settings_user">User</string>
+    <string name="settings_password">Password</string>
+    <string name="settings_save">Save</string>    
+</resources>

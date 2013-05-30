@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- start buttons -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/main_slide_hide_word"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector3"
+            android:text="@string/main_slide_hide_word" />
+
+        <Button
+            android:id="@+id/main_slide_hide_translation"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector3"
+            android:text="@string/main_slide_hide_translation" />
+
+        <Button
+            android:id="@+id/main_slide_delete_word"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector2"
+            android:text="@string/main_slide_delete_word" />
+    </LinearLayout>
+    <!-- end buttons -->
+
+    <ViewFlipper
+        android:id="@+id/main_slide_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_slide_word0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cdfbc7"
+                android:textSize="50dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_slide_pronunciation0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp" >
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="#55fdfdc8" />
+
+            <ScrollView
+                android:id="@+id/main_slide_scroll0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/main_slide_translation0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:textColor="#d5f0fa"
+                    android:textSize="30dp" >
+                </TextView>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_slide_word1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cdfbc7"
+                android:textSize="50dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_slide_pronunciation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp" >
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:background="#55fdfdc8" />
+
+            <ScrollView
+                android:id="@+id/main_slide_scroll1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/main_slide_translation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:textColor="#d5f0fa"
+                    android:textSize="30dp" >
+                </TextView>
+            </ScrollView>
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

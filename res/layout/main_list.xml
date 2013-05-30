@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <net.johnsonlau.tool.TouchListView
+        xmlns:tlv="http://schemas.android.com/apk/res/net.johnsonlau.word"
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:divider="#b5b6b5"
+        android:dividerHeight="1dp"
+        tlv:grabber="@+id/main_list_item_icon"
+        tlv:expanded_height="160dip"
+        tlv:normal_height="50dip"
+		tlv:dragndrop_background="#ffbe29"
+        tlv:remove_mode="slideLeft" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_list_no_words" />
+
+</LinearLayout>
