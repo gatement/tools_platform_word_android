@@ -99,7 +99,7 @@ public class MainActivity extends ListActivity implements OnTouchListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		checkTts();
+		//checkTts();
 
 		initMembers();
 		bindEvents();
